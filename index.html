@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- Se le contacta para realizar una página web de comida (puede ser un restaurant, una comida en específico, o cualquier tema relacionado a comida),
+     para lo cual, usted decide realizar un Landing Page para desarrollar el trabajo.
+En esta situación el cliente le solicita que tenga ciertos requerimientos. 
+    • Menú de navegación a las diferentes secciones, apuntando a cada una de ellas. (10 puntos)
+    • Imagen principal en el header tipo hero, con su respectivo texto centrado y un color que resalte. (10 puntos)
+    • Sección con ofertas (con algún recuadro bien definido), que contenga icono o foto, titulo descriptivo y valor (al menos 3 recuadros
+     alineados en la misma fila y centrados, con margen y espaciado). (15 puntos)
+    • Crear galería que muestre al menos 12 imágenes, repartidas como usted prefiera. Es importante que las imágenes tengan márgenes y 
+    bordes bien definidos, además de la propiedad hover. (30 puntos)
+    • Formulario de pedidos, debe contener: Nombre, teléfono, email, dirección y una casilla para anotar todos los productos que desea 
+    llevar (estilos a su elección). (20 puntos)
+    • Crear Footer que contenga link’s de interés, así como también, datos de contacto del creador (fono, email, dirección, etc.). (25 puntos) 
+    • Utiliza github para guardar el trabajo realizado y además, subirlo a github pages, para mostrar la página. (15 puntos) -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- menu nav -->
+    <nav>
+        <ul class="menu">
+            <li><a href="">Inicio</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Pedido</a></li>
+        </ul>
+    </nav>
+    <!-- header hero -->
+    <header class="hero">
+        <div class="hero-texto">
+            <h1>Restaurante Bazagarri</h1>
+            <h2>Cocina gourmet</h2>
+        </div>
+    </header>
+    <!-- seccion ofertas -->
+    <section class="ofertas" id="ofertas">
+        <h2>Ofertas</h2>
+
+        <div class="contenedor-card">
+            <article class="card">
+                <div class="margen-icono">
+                    <img src="img/istockphoto-1459715799-612x612.jpg" alt="">
+                </div>
+                <h3>Pizza al horno de piedra recién horneada</h3>
+                <p>Esta pizza se describe por su apariencia fresca y el método de cocción en horno de piedra. Es pequeña
+                    y tiene un aspecto general apetitoso.</p>
+                <a href="" class="boton">Precio: $9900</a>
+            </article>
+            <article class="card">
+                <div class="margen-icono">
+                    <img src="img/lasana-de-carne-2-1-815x458.jpg" alt="">
+                </div>
+                <h3>Lasaña</h3>
+                <p>La lasaña es un platillo de origen italiano que consiste en capas de pasta intercaladas con salsa y
+                    queso,
+                    todo horneado hasta que esté caliente y burbujeante.</p>
+                <a href="" class="boton">Precio: $8900</a>
+            </article>
+            <article class="card">
+                <div class="margen-icono">
+                    <img src="img/pasta.jpg" alt="">
+                </div>
+                <h3>Pasta</h3>
+                <p>Capas de pasta al dente con salsa y queso, horneadas hasta la perfección.</p>
+                <a href="" class="boton">Precio: $6900</a>
+            </article>
+        </div>
+    </section>
+    <!-- seccion galeria -->
+    <section class="galeria" id="galeria">
+        <div class="">
+            <h2 class="titulo">Galería de imágenes</h2>
+            <div class="contenedor-galeria">
+                <img src="img/1.avif" alt="">
+                <img src="img/2.avif" alt="">
+                <img src="img/3.avif" alt="">
+                <img src="img/4.jpg" alt="">
+                <img src="img/5.jpg" alt="">
+                <img src="img/6.avif" alt="">
+                <img src="img/7.avif" alt="">
+                <img src="img/8.avif" alt="">
+                <img src="img/9.jpg" alt="">
+                <img src="img/10.avif" alt="">
+                <img src="img/11.jpg" alt="">
+                <img src="img/12.avif" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- seccion contacto -->
+    <section class="contacto" id="contacto">
+        <div class="contenedor">
+            <h2 class="titulo">Formulario de contacto</h2>
+            <form class="formulario">
+                <input type="text" class="input input-ancho" placeholder="Ingresa nombre">
+                <input type="text" class="input input-ancho" placeholder="Ingresa teléfono">
+                <input type="email" class="input input-ancho" placeholder="Ingresa email">
+                <input type="text" class="input input-ancho" placeholder="Ingresa dirección">
+                <textarea class="input ancho" placeholder="Ingresa el pedido" res cols="30" rows="10"></textarea>
+                <input type="reset" value="Limpiar" class="boton input-ancho">
+                <input type="submit" value="Enviar" class="boton input-ancho">
+            </form>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div>
+            <article class="barra-inferior">
+                <div class="card-inferior">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+                    <p><i class="bi bi-house"></i> Los Ángeles</p>
+                    <p><i class="bi bi-person"></i> Nicolás Bazaes</p>
+                    <p><i class="bi bi-envelope-at"></i> <a
+                            href="mailto:nicolas.bazaes02@inacapmail.cl">nicolas.bazaes02@inacapmail.cl</a></p>
+                    <p><i class="bi bi-phone"></i> +56 9 5960 2232</p>
+                </div>
+            </article>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero {
+    background-image: url(img/fancy-dinner.webp);
+    background-color: black;
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-texto {
+    color: white;
+    display: flex;
+    /* Hace que los elementos sean adaptativos(flexibles) a cualquier pantalla */
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* con estos parámetros queda centrado en todos los tipos de pantallas */
+}
+
+.hero h1 {
+    /* este estilo se aplica en todos los h1 que están en la clase hero */
+    font-size: 60px;
+    text-shadow: 0 0 20px white;
+}
+
+.hero h2 {
+    font-size: 40px;
+    text-shadow: 0 0 15px white;
+}
+
+.ofertas {
+    background-color: rgb(49, 48, 47);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.ofertas h2 {
+    color: white;
+    text-shadow: 0 0 15px black;
+    font-size: 35px;
+    text-align: center;
+    margin: 20px;
+    margin-top: 60px;
+    padding: 25px;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.titulo {
+    color: white;
+    text-shadow: 0 0 15px black;
+    font-size: 35px;
+    text-align: center;
+    margin: 20px;
+}
+
+.parrafo {
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 300;
+    text-shadow: 0 0 6 white;
+}
+
+.contenedor-card {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor-card img {
+    width: 50%;
+    height: 25%;
+    justify-content: space-evenly;
+}
+
+.card {
+    box-shadow: 0 0 5px black;
+    text-align: center;
+    border-radius: 10px;
+    width: 30%;
+    padding: 15px;
+}
+
+.card:hover {
+    /* Efecto que se produce al poner el puntero por encima */
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+.margen-icono {
+    margin: 20px 0;
+}
+
+.boton {
+    background-color: burlywood;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 0px 0px black;
+    width: 120px;
+    text-align: center;
+    padding: 20px 15px;
+    display: inline-block;
+    margin: 30px 0;
+    border: 1px solid white;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+.boton:hover {
+    background-color: white;
+    color: burlywood;
+    border: 1px solid burlywood;
+
+}
+
+.card p {
+    text-align: center;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.card h3 {
+    font-size: 28px;
+}
+
+.galeria {
+    background-color: burlywood;
+    display: inline-block;
+}
+
+.galeria h2 {
+    color: white;
+    text-shadow: 0 0 15px black;
+    font-size: 35px;
+    text-align: center;
+    margin: 20px;
+    margin-top: 60px;
+    padding: 25px;
+}
+
+.contenedor-galeria {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contenedor-galeria img {
+    width: 23%;
+    margin-bottom: 25px;
+    display: block;
+    box-shadow: 0 0 6px black;
+}
+
+.contenedor-galeria img:hover {
+    transform: scaleX(-1.01);
+    transition: 0.6s;
+}
+
+.barra-inferior {
+    background-color: darkolivegreen;
+    text-align: left;
+    color: whitesmoke;
+    padding: 20px 10px;
+}
+
+.card-inferior {
+    margin: 20px 0;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 25px;
+    text-align: center;
+}
+
+.card-inferior a:link {
+    color: rgb(204, 204, 204);
+    background-color: transparent;
+}
+
+.card-inferior a:visited {
+    color: rgb(204, 204, 204);
+    background-color: transparent;
+}
+
+.card-inferior i {
+    font-size: 25px;
+}
+
+.contacto {
+    background-color: rgb(49, 48, 47);
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.input {
+    color: whitesmoke;
+    background: transparent;
+    font-size: 30px;
+    margin-bottom: 30px;
+    border: 0;
+    outline: none;
+    border: 2px solid whitesmoke;
+    padding: 20px 10px;
+}
+
+.input-ancho {
+    width: 47%;
+}
+
+.ancho {
+    width: 96%;
+    resize: none;
+}
+
+.menu {
+    background-color: black;
+    list-style: none;
+    position: fixed;
+    width: 100%;
+}
+
+.menu li {
+    float: left;
+
+}
+
+.menu li a {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 18px;
+    display: inline-block;
+}
+
+.menu li a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: red;
+    transform: scale(1.01);
+    transition: 0.3s;
+}
